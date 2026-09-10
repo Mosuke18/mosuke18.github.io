@@ -551,3 +551,19 @@ footer {
   }
 
 }
+
+/* Fix layout for Publications page */
+
+.publication-section .publication {
+
+  display: block;
+
+  width: 100%;
+
+}
+
+.publication-section .pub-content {
+
+  width: 100%;
+
+}
