@@ -1,174 +1,411 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Publications | Tomohiro Samma</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    /* Publications page only */
+
+    .publications-container {
+
+      max-width: 900px;
+
+      margin: 0 auto;
+
+      padding: 70px 30px 50px;
+
+    }
+
+    .publications-nav {
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 1000;
+
+      display: flex;
+
+      justify-content: flex-end;
+
+      gap: 28px;
+
+      padding: 14px 0;
+
+      margin-bottom: 50px;
+
+      background: rgba(255,255,255,0.95);
+
+      backdrop-filter: blur(8px);
+
+    }
+
+    .publications-nav a {
+
+      color: #666;
+
+      text-decoration: none;
+
+      font-size: 15px;
+
+    }
+
+    .publications-nav a.active {
+
+      color: #111;
+
+      font-weight: 600;
+
+    }
+
+    .publications-page-title {
+
+      font-size: 38px;
+
+      margin: 0 0 60px;
+
+    }
+
+    .pub-section-title {
+
+      font-size: 26px;
+
+      margin-top: 60px;
+
+      margin-bottom: 35px;
+
+      padding-bottom: 8px;
+
+      border-bottom: 1px solid #ddd;
+
+    }
+
+    .pub-year-title {
+
+      font-size: 22px;
+
+      margin-top: 40px;
+
+      margin-bottom: 25px;
+
+    }
+
+    .pub-entry {
+
+      width: 100%;
+
+      display: block;
+
+      padding-bottom: 24px;
+
+      margin-bottom: 24px;
+
+      border-bottom: 1px solid #eee;
+
+    }
+
+    .pub-entry-title {
+
+      font-size: 18px;
+
+      font-weight: 600;
+
+      line-height: 1.5;
+
+      margin-bottom: 7px;
+
+    }
+
+    .pub-entry-authors {
+
+      font-size: 15px;
+
+      line-height: 1.6;
+
+      margin-bottom: 4px;
+
+      color: #444;
+
+    }
+
+    .pub-entry-venue {
+
+      font-size: 15px;
+
+      color: #666;
+
+      margin-bottom: 9px;
+
+    }
+
+    .pub-entry-links {
+
+      display: flex;
+
+      gap: 8px;
+
+    }
+
+    .pub-entry-links a {
+
+      padding: 3px 10px;
+
+      border: 1px solid #ccc;
+
+      border-radius: 5px;
+
+      font-size: 13px;
+
+      color: #444;
+
+      text-decoration: none;
+
+    }
+
+    .pub-entry-links a:hover {
+
+      background: #f5f5f5;
+
+    }
+
+    .presentation-type {
+
+      font-size: 14px;
+
+      color: #888;
+
+      margin-top: 5px;
+
+    }
+
+    @media (max-width: 650px) {
+
+      .publications-container {
+
+        padding: 40px 22px 30px;
+
+      }
+
+      .publications-page-title {
+
+        font-size: 32px;
+
+      }
+
+      .pub-section-title {
+
+        font-size: 23px;
+
+      }
+
+    }
+
+  </style>
+
 </head>
 
-<body class="publications-page">
-<div class="container">
-  <!-- Navigation -->
-  <nav class="navbar">
+<body>
+
+<div class="publications-container">
+
+  <nav class="publications-nav">
+
     <a href="index.html">Home</a>
+
     <a href="publications.html" class="active">Publications</a>
+
   </nav>
 
-  <!-- Page title -->
-  <div class="page-header">
-    <h1>Publications</h1>
-    <p>
-      Publications and conference presentations in reverse chronological order.
-    </p>
-  </div>
+  <h1 class="publications-page-title">
 
-  <!-- ======================================
-       PEER-REVIEWED PAPERS
-  ======================================= -->
+    Publications
 
-  <section class="publication-section">
-    <h2>Journal Articles & Preprints</h2>
+  </h1>
 
-    <!-- 2026 -->
-    <div class="pub-year-block">
-      <h3 class="year-heading">2026</h3>
-      
-      <div class="publication">
-        <div class="pub-content">
-          <div class="pub-title">
-            Paper title here
-          </div>
-          <div class="pub-authors">
-            Author A, <strong>Tomohiro Samma</strong>, Author B
-          </div>
-          <div class="pub-venue">
-            <em>Journal Name</em>, 2026
-          </div>
-          <div class="pub-links">
-            <a href="#" target="_blank">Website</a>
-          </div>
-        </div>
+  <!-- =========================
+
+       Journal Articles
+
+  ========================== -->
+
+  <section>
+
+    <h2 class="pub-section-title">
+
+      Journal Articles & Preprints
+
+    </h2>
+
+    <h3 class="pub-year-title">2026</h3>
+
+    <div class="pub-entry">
+
+      <div class="pub-entry-title">
+
+        A Smart Footwear Platform for Gait Augmentation:
+
+        Application to Musical Feedback for Improving Gait
+
+        in Parkinson's Disease
+
       </div>
 
+      <div class="pub-entry-authors">
 
-      <div class="publication">
-        <div class="pub-content">
-          <div class="pub-title">
-            Another paper title here
-          </div>
-          <div class="pub-authors">
-            Author A, Author B, <strong>Tomohiro Samma</strong>
-          </div>
-          <div class="pub-venue">
-            <em>Journal Name</em>, 2026
-          </div>
-          <div class="pub-links">
-            <a href="#" target="_blank">Website</a>
-          </div>
-        </div>
+        Yuki Uno, Fushi Sano, Riki Saito, Ryo Yumoto,
+
+        Tomoya Nakamura, <strong>Tomohiro Samma</strong>,
+
+        Kenta Tanaka, Harukaze Yatsugi, Makoto Sawada,
+
+        Yuya Kikukawa, Shinya Fujii
+
       </div>
+
+      <div class="pub-entry-venue">
+
+        <em>NIME'26</em>
+
+      </div>
+
+      <div class="pub-entry-links">
+
+        <a href="#" target="_blank">Website</a>
+
+      </div>
+
     </div>
 
+    <div class="pub-entry">
 
-    <!-- 2025 -->
-    <div class="pub-year-block">
-      <h3 class="year-heading">2025</h3>
-      <div class="publication">
-        <div class="pub-content">
-          <div class="pub-title">
-            Sight-over-sound effect depends on interaction between evaluators’
-            musical experience and auditory–visual integration:
-            An examination using Japanese brass band competition recordings
-          </div>
-          <div class="pub-authors">
-            <strong>Tomohiro Samma</strong>, Kazuaki Honda, Shinya Fujii
-          </div>
-          <div class="pub-venue">
-            <em>PLOS ONE</em>, 2025
-          </div>
-          <div class="pub-links">
-            <a href="#" target="_blank">Website</a>
-          </div>
-        </div>
+      <div class="pub-entry-title">
+
+        Modulating supplementary motor area excitability enhances
+
+        groove-related pleasure during music listening
+
       </div>
+
+      <div class="pub-entry-authors">
+
+        Takahide Etani, Mitsuaki Takemi,
+
+        <strong>Tomohiro Samma</strong>, et al.
+
+      </div>
+
+      <div class="pub-entry-venue">
+
+        <em>bioRxiv</em>
+
+      </div>
+
+      <div class="pub-entry-links">
+
+        <a href="#" target="_blank">Website</a>
+
+      </div>
+
     </div>
+
+    <h3 class="pub-year-title">2025</h3>
+
+    <div class="pub-entry">
+
+      <div class="pub-entry-title">
+
+        Sight-over-sound effect depends on interaction between evaluators’
+
+        musical experience and auditory–visual integration:
+
+        An examination using Japanese brass band competition recordings
+
+      </div>
+
+      <div class="pub-entry-authors">
+
+        <strong>Tomohiro Samma</strong>,
+
+        Kazuaki Honda, Shinya Fujii
+
+      </div>
+
+      <div class="pub-entry-venue">
+
+        <em>PLOS ONE</em>
+
+      </div>
+
+      <div class="pub-entry-links">
+
+        <a href="#" target="_blank">Website</a>
+
+      </div>
+
+    </div>
+
   </section>
 
+  <!-- =========================
 
+       Conference Presentations
 
-  <!-- ======================================
-       CONFERENCE PRESENTATIONS
-  ======================================= -->
+  ========================== -->
 
-  <section class="publication-section">
-    <h2>Conference Presentations</h2>
+  <section>
 
-    <!-- 2026 -->
+    <h2 class="pub-section-title">
 
-    <div class="pub-year-block">
-      <h3 class="year-heading">2026</h3>
-      <div class="publication">
-        <div class="pub-content">
-          <div class="pub-title">
-            Presentation title here
-          </div>
-          <div class="pub-authors">
-            <strong>Tomohiro Samma</strong>, Author B, Author C
-          </div>
-          <div class="pub-venue">
-            RMA-SMI-EADH Annual Conference 2026,
-            Queen's University Belfast, Belfast, UK
-          </div>
-          <div class="pub-meta">
-            Oral presentation
-          </div>
-        </div>
+      Conference Presentations
+
+    </h2>
+
+    <h3 class="pub-year-title">2026</h3>
+
+    <div class="pub-entry">
+
+      <div class="pub-entry-title">
+
+        Presentation title here
+
       </div>
-      
-      <div class="publication">
-        <div class="pub-content">
-          <div class="pub-title">
-            Another presentation title here
-          </div>
-          <div class="pub-authors">
-            <strong>Tomohiro Samma</strong>, Author B
-          </div>
-          <div class="pub-venue">
-            Conference Name, City, Country
-          </div>
-          <div class="pub-meta">
-            Poster presentation
-          </div>
-        </div>
+
+      <div class="pub-entry-authors">
+
+        <strong>Tomohiro Samma</strong>, ...
+
       </div>
+
+      <div class="pub-entry-venue">
+
+        RMA-SMI-EADH Annual Conference 2026,
+
+        Queen's University Belfast, Belfast, UK
+
+      </div>
+
+      <div class="presentation-type">
+
+        Oral presentation
+
+      </div>
+
     </div>
 
-    <!-- 2025 -->
-    <div class="pub-year-block">
-      <h3 class="year-heading">2025</h3>
-      <div class="publication">
-        <div class="pub-content">
-          <div class="pub-title">
-            Conference presentation title
-          </div>
-          <div class="pub-authors">
-            <strong>Tomohiro Samma</strong>, Author B
-          </div>
-          <div class="pub-venue">
-            Conference Name, 2025
-          </div>
-        </div>
-      </div>
-    </div>
-    
   </section>
-
-  <footer>
-    <p>© 2026 Tomohiro Samma</p>
-  </footer>
 
 </div>
+
 </body>
+
 </html>
