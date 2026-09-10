@@ -394,3 +394,160 @@ footer {
   text-decoration: none;
 
 }
+
+
+/* ==========================================
+   Publications page
+========================================== */
+
+.page-header {
+  margin-bottom: 60px;
+}
+
+.page-header h1 {
+  margin: 0 0 8px;
+
+  font-size: 36px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.page-header p {
+  color: #777;
+  font-size: 15px;
+}
+
+
+.publication-section {
+  margin-bottom: 80px;
+}
+
+
+.publication-section > h2 {
+  font-size: 26px;
+  margin-bottom: 35px;
+}
+
+
+.pub-year-block {
+  margin-bottom: 50px;
+}
+
+
+.year-heading {
+  margin: 0 0 20px;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  color: #333;
+}
+
+
+.publication {
+  padding: 0 0 25px;
+  margin-bottom: 25px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+.pub-title {
+  font-size: 18px;
+  font-weight: 600;
+
+  line-height: 1.55;
+
+  margin-bottom: 6px;
+}
+
+
+.pub-authors {
+  font-size: 15px;
+
+  margin-bottom: 4px;
+
+  color: #444;
+}
+
+
+.pub-venue {
+  font-size: 15px;
+
+  margin-bottom: 8px;
+
+  color: #666;
+}
+
+
+.pub-meta {
+  font-size: 14px;
+
+  color: #888;
+
+  margin-top: 5px;
+}
+
+
+.pub-links {
+  display: flex;
+
+  gap: 8px;
+
+  margin-top: 9px;
+}
+
+
+.pub-links a {
+  display: inline-block;
+
+  padding: 3px 10px;
+
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+
+  font-size: 13px;
+
+  color: #444;
+
+  text-decoration: none;
+}
+
+
+.pub-links a:hover {
+  background: #f5f5f5;
+
+  text-decoration: none;
+}
+
+
+/* Active navigation item */
+
+.navbar a.active {
+  color: #111;
+  font-weight: 600;
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+  .page-header h1 {
+    font-size: 31px;
+  }
+
+  .publication-section > h2 {
+    font-size: 23px;
+  }
+
+  .year-heading {
+    font-size: 20px;
+  }
+
+  .pub-title {
+    font-size: 17px;
+  }
+
+}
