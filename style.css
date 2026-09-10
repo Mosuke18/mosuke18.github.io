@@ -567,3 +567,71 @@ footer {
   width: 100%;
 
 }
+
+/* =========================
+
+   Publications page override
+
+========================= */
+
+.publications-page .container {
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 60px 30px;
+
+}
+
+.publications-page .publication-section {
+
+  width: 100%;
+
+  max-width: none;
+
+}
+
+.publications-page .pub-year-block {
+
+  width: 100%;
+
+}
+
+.publications-page .publication {
+
+  display: block !important;
+
+  width: 100% !important;
+
+  max-width: none !important;
+
+  grid-template-columns: none !important;
+
+}
+
+.publications-page .pub-content {
+
+  display: block !important;
+
+  width: 100% !important;
+
+  max-width: none !important;
+
+}
+
+.publications-page .pub-title,
+
+.publications-page .pub-authors,
+
+.publications-page .pub-venue,
+
+.publications-page .pub-meta,
+
+.publications-page .pub-links {
+
+  width: 100%;
+
+  max-width: none;
+
+}
